@@ -601,3 +601,30 @@
           /* caché en mobile */
       }
   }
+
+  .icone {
+      display: block;
+      max-width: 10%;
+      height: auto;
+  }
+
+  .contact-icon {
+      width: 1.1em;
+      height: 1.1em;
+      opacity: .9;
+      transition: opacity .2s ease, transform .2s ease;
+      filter: invert(1);
+  }
+
+  .btn:hover .contact-icon {
+      opacity: .85;
+      transform: translateY(-1px);
+  }
+
+  .about-hero-img {
+      display: block;
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      margin: 0 auto;
+  }
