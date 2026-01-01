@@ -45,12 +45,19 @@
                 </nav>
         
                 <!-- Main nav -->
-                <nav class="nav nav-masthead gap-3">
+                <nav class="nav nav-masthead gap-3 desktop-nav">
                     <a class="nav-link fw-bold py-1 px-0 active" data-i18n="nav.home" href="../index.html">Home</a>
                     <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.about" href="../about/index.html">About</a>
                     <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.contact" href="../contact/index.html">Contact</a>
                 </nav>
+                <!-- Mobile toggle -->
+                <button class="menu-toggle mobile-nav" aria-expanded="false" aria-controls="mobileMenu">☰</button>
         
+                <nav id="mobileMenu" class="mobile-menu mobile-nav" aria-label="Mobile menu">
+                    <a data-i18n="nav.home" href="../index.html">Home</a>
+                    <a data-i18n="nav.about" href="../about/index.html">About</a>
+                    <a data-i18n="nav.contact" href="../contact/index.html">Contact</a>
+                </nav>
             </div>
         </header>
 

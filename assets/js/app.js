@@ -77,6 +77,16 @@ async function loadTranslations(lang) {
   document.addEventListener("DOMContentLoaded", () => {
     const saved = localStorage.getItem("lang") || "en";
     setLanguage(saved);
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.getElementById("mobileMenu");
+
+    if (toggle && menu) {
+    toggle.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+    }
+
   
     const links = document.querySelectorAll(".lang-link");
     if (!links.length) {
@@ -92,4 +102,21 @@ async function loadTranslations(lang) {
     });
   });
   
+  document.querySelectorAll("#mobileMenu a").forEach(a => {
+    a.addEventListener("click", () => {
+      const menu = document.getElementById("mobileMenu");
+      const toggle = document.querySelector(".menu-toggle");
+      menu.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+  
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      const menu = document.getElementById("mobileMenu");
+      const toggle = document.querySelector(".menu-toggle");
+      if (menu) menu.classList.remove("is-open");
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    }
+  });
   

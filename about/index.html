@@ -28,6 +28,7 @@
 
 <body class="d-flex flex-column min-vh-100 text-bg-dark">
     <div class="container-fluid px-4 flex-grow-1 d-flex flex-column">
+
         <header class="mb-3">
             <div class="d-flex align-items-center justify-content-between">
         
@@ -42,12 +43,19 @@
                 </nav>
         
                 <!-- Main nav -->
-                <nav class="nav nav-masthead gap-3">
+                <nav class="nav nav-masthead gap-3 desktop-nav">
                     <a class="nav-link fw-bold py-1 px-0 active" data-i18n="nav.home" href="../index.html">Home</a>
                     <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.about" href="../about/index.html">About</a>
                     <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.contact" href="../contact/index.html">Contact</a>
                 </nav>
-        
+                <!-- Mobile toggle -->
+                <button class="menu-toggle mobile-nav" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+                
+                <nav id="mobileMenu" class="mobile-menu mobile-nav" aria-label="Mobile menu">
+                    <a data-i18n="nav.home" href="../index.html">Home</a>
+                    <a data-i18n="nav.about" href="../about/index.html">About</a>
+                    <a data-i18n="nav.contact" href="../contact/index.html">Contact</a>
+                </nav>
             </div>
         </header>
 
@@ -145,8 +153,10 @@
              <!-- pancarte -->
              <div class="container col-xxl-8 px-4 py-5"> 
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
-                    <div class="col-10 col-sm-8 col-lg-6"> 
-                        <img src="../assets/img/layouts_dash_about.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> 
+                    <div class="col-10 col-sm-8 col-lg-6 mx-auto"> 
+                       
+                        <img src="../assets/img/layouts_dash_about.png" class="d-block mx-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+
                     </div> 
                     <div class="col-lg-6"> 
                         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" data-i18n="about.card.title">Let’s build tools that actually move your business forward.</h1> 

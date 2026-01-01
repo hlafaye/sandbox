@@ -502,3 +502,102 @@
       color: #fff !important;
       font-weight: 700;
   }
+
+
+  /* Mobile menu hidden by default */
+  .mobile-menu {
+      display: none;
+  }
+
+  /* Button basic styling (match ton style dark) */
+  .menu-toggle {
+      border: 1px solid rgba(255, 255, 255, .25);
+      background: rgba(255, 255, 255, .04);
+      color: #fff;
+      border-radius: 14px;
+      width: 44px;
+      height: 44px;
+      line-height: 1;
+  }
+
+  /* Mobile layout */
+  @media (max-width: 768px) {
+
+      /* cache la nav desktop */
+      .desktop-nav {
+          display: none !important;
+      }
+
+      /* place le bouton à droite dans le header si besoin */
+      .menu-toggle {
+          display: inline-flex !important;
+          align-items: center;
+          justify-content: center;
+      }
+
+      /* le panel */
+      .mobile-menu.is-open {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          position: absolute;
+          top: 72px;
+          /* ajuste selon ton header */
+          right: 16px;
+          width: min(240px, calc(100vw - 32px));
+
+          padding: 14px;
+          border-radius: 18px;
+
+          background: rgba(20, 24, 28, .92);
+          border: 1px solid rgba(255, 255, 255, .12);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, .45);
+          backdrop-filter: blur(10px);
+          z-index: 9999;
+      }
+
+      /* liens */
+      .mobile-menu a {
+          text-decoration: none !important;
+          color: rgba(255, 255, 255, .9);
+          padding: 10px 12px;
+          border-radius: 12px;
+          background: rgba(255, 255, 255, .04);
+      }
+
+      .mobile-menu a:hover,
+      .mobile-menu a:focus {
+          background: rgba(255, 255, 255, .08);
+      }
+  }
+
+  header {
+      position: relative;
+  }
+
+  /* ====== Defaults (desktop) ====== */
+  .menu-toggle {
+      display: none;
+      /* caché en desktop */
+  }
+
+  .desktop-nav {
+      display: flex;
+      /* visible en desktop */
+  }
+
+  /* ====== Mobile ====== */
+  @media (max-width: 768px) {
+      .menu-toggle {
+          display: inline-flex;
+          /* visible en mobile */
+          align-items: center;
+          justify-content: center;
+      }
+
+      .desktop-nav {
+          display: none !important;
+          /* caché en mobile */
+      }
+  }
