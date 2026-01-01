@@ -1,0 +1,84 @@
+{
+    "nav.home": "Accueil",
+    "nav.about": "À propos",
+    "nav.contact": "Contact",
+  
+    "home.title": "Projets",
+    "home.common.view": "Voir",
+  
+    "home.card.smartcity.title": "Smart city insights",
+    "home.card.smartcity.desc": "Smart City Insights transforme les données ouvertes en informations claires et exploitables.",
+  
+    "home.card.pilote.title": "Pilote innovorder",
+    "home.card.pilote.desc": "Importer des exports, normaliser les données et suivre les KPI (ventes, food cost, écarts) via un tableau de bord rapide et lisible.",
+  
+    "home.card.color.title": "Color extract",
+    "home.card.color.desc": "Extraire une palette de couleurs propre depuis n’importe quelle image en quelques secondes (HEX + nuanciers), optimisée pour le mobile.",
+  
+  
+    "about.feature.1.title": "Operations & Management",
+    "about.feature.1.desc": "Optimiser les opérations quotidiennes, clarifier les processus et améliorer l’exécution grâce à des routines mesurables.",
+  
+    "about.feature.2.title": "Business Dashboards (KPIs)",
+    "about.feature.2.desc": "Suivre les ventes, les coûts, les marges et les écarts à l’aide de tableaux de bord conçus pour une prise de décision rapide.",
+  
+    "about.feature.3.title": "Data Cleaning & Automation",
+    "about.feature.3.desc": "Automatiser les imports/exports, normaliser des fichiers hétérogènes et réduire le travail manuel avec des pipelines robustes.",
+  
+    "about.feature.4.title": "Data Analysis & Insights",
+    "about.feature.4.desc": "Transformer les données brutes en analyses exploitables : tendances, anomalies, leviers de performance et prochaines actions.",
+  
+    "about.feature.5.title": "Relational Databases",
+    "about.feature.5.desc": "Schémas SQL, relations, optimisation des requêtes et bases solides et évolutives pour vos données.",
+  
+    "about.feature.6.title": "Tooling & Internal Apps",
+    "about.feature.6.desc": "Des outils internes adaptés à vos workflows, des utilitaires rapides aux applications complètes qui réduisent la friction.",
+  
+    "about.feature.7.title": "SaaS & MVP Delivery",
+    "about.feature.7.desc": "De l’idée au produit fonctionnel : MVP rapides, itérations efficaces et livraisons prêtes pour la production.",
+  
+    "about.feature.8.title": "Responsive UI / UX",
+    "about.feature.8.desc": "Interfaces mobile-first avec des patterns UI modernes : rapides, accessibles et épurées.",
+  
+  
+    "about.card.title": "Construisons des outils qui font réellement avancer votre activité.",
+    "about.card.desc": "Tableaux de bord opérationnels, outils internes, pipelines de données ou applications web sur mesure : je transforme des besoins complexes en solutions claires et efficaces. De l’exploration initiale aux systèmes prêts pour la production, l’objectif reste le même : plus de visibilité, de meilleures décisions et moins de friction.",
+    "about.card.btn": "Me contacter",
+
+
+    "contact.contact": "CONTACT",
+    "contact.title": "Construisons quelque chose d’utile.",
+    "contact.message": "Retour, collaboration ou opportunités professionnelles — n’hésitez pas à me contacter.",
+    "contact.badge": "Entrer en contact",
+    "contact.btn.email": "M’écrire par email",
+    "contact.btn.github": "GitHub",
+    "contact.btn.linkedin": "LinkedIn",
+    "contact.message.end": "Pour un message rapide, l’email reste le plus simple.",
+
+    "pilote.hero.title": "Pilote Innovorder",
+    "pilote.hero.subtitle": "Pilote Innovorder accélère les récapitulatifs de ventes et le traitement des données pour les équipes finance et opérations.",
+    "pilote.hero.text": "L’outil s’adapte à toute structure de données de vente grâce à des tables de mapping flexibles et des paramètres configurables, sans réécriture de la logique. Les rapports sont générés automatiquement selon les KPI sélectionnés, les périodes et les périmètres — prêts pour l’analyse, la validation et le support à la facturation.",
+    "pilote.hero.btn": "Demander une démo",
+  
+    "pilote.album.btn": "Voir",
+  
+    "pilote.album.1.title": "Accueil moderne et responsive",
+    "pilote.album.1.desc": "Une page d’accueil propre, moderne et entièrement responsive, conçue pour une prise en main rapide et une lecture immédiate, sur desktop comme sur mobile.",
+  
+    "pilote.album.2.title": "Sélection de préréglages de sortie",
+    "pilote.album.2.desc": "Des préréglages de sortie permettent de sélectionner rapidement la logique de reporting selon les règles métier, les modes de paiement et les paramètres opérationnels.",
+  
+    "pilote.album.3.title": "Configuration pilotée par dictionnaire",
+    "pilote.album.3.desc": "Toute la logique des rapports est définie via un dictionnaire simple et lisible — une configuration intuitive, rapide à ajuster et entièrement procédurale.",
+  
+    "pilote.album.4.title": "Génération automatique des rapports",
+    "pilote.album.4.desc": "Les rapports sont générés automatiquement à partir des paramètres du dictionnaire, y compris le nombre et la structure des tableaux nécessaires pour chaque sortie.",
+  
+    "pilote.album.5.title": "Export de données flexible",
+    "pilote.album.5.desc": "Chaque tableau généré peut être exporté individuellement au format CSV ou XLSX, prêt pour la finance, la validation ou des outils externes.",
+  
+    "pilote.album.6.title": "Récapitulatif global et ligne de contrôle",
+    "pilote.album.6.desc": "Une ligne de récapitulatif consolidée est ajoutée automatiquement, offrant un point de contrôle visuel rapide pour valider les totaux et la cohérence des données."
+      
+  }
+  

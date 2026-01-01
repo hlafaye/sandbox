@@ -28,15 +28,25 @@
 <body class="d-flex flex-column min-vh-100 text-bg-dark">
     <div class="container-fluid px-4 flex-grow-1 d-flex flex-column">
         <header class="mb-3">
-
             <div class="d-flex align-items-center justify-content-between">
-                <img src="../assets/img/logo_sandbox.png" class=" float-md-start
-                    mb-0 logo">
-                <nav class="nav nav-masthead justify-content-center float-md-end gap-3">
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../index.html">Home</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../about/index.html">About</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../contact/index.html">Contact</a>
+        
+                <!-- Logo -->
+                <img src="../assets/img/logo_sandbox.png" class="logo mb-0" alt="logo">
+        
+                <!-- Language switch (centered) -->
+                <nav class="lang-switch mx-auto">
+                    <a href="#" class="nav-link py-1 px-2 lang-link" data-lang="en">EN</a>
+                    <span class="text-white-50 py-1">/</span>
+                    <a href="#" class="nav-link py-1 px-2 lang-link" data-lang="fr">FR</a>
                 </nav>
+        
+                <!-- Main nav -->
+                <nav class="nav nav-masthead gap-3">
+                    <a class="nav-link fw-bold py-1 px-0 active" data-i18n="nav.home" href="../index.html">Home</a>
+                    <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.about" href="../about/index.html">About</a>
+                    <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.contact" href="../contact/index.html">Contact</a>
+                </nav>
+        
             </div>
         </header>
 
@@ -47,17 +57,17 @@
 <section class="py-5 text-center container"> 
     <div class="row py-lg-5"> 
         <div class="col-lg-6 col-md-8 mx-auto"> 
-            <h1 class="fw-light">Pilote innovorder</h1> 
-            <p class="lead text-body-primary">
+            <h1 class="fw-light" data-i18n="pilote.hero.title">Pilote innovorder</h1> 
+            <p class="lead text-body-primary" data-i18n="pilote.hero.subtitle">
                 Pilote Innovorder accelerates sales recaps and data parsing for finance and operations teams.
             </p>
-            <p class="lead text-body-secondary">
+            <p class="lead text-body-secondary" data-i18n="pilote.hero.text">
                 It adapts to any sales data structure through flexible mapping tables and configurable parameters, without rewriting
                 logic. Reports are generated automatically based on selected KPIs, periods, and scopes—ready for analysis, validation,
                 and billing support.
                 </p> 
-                 <p> <a href="../contact/" class="btn btn-primary my-2">Ask demo</a> 
-                    <a href="../index.html" class="btn btn-secondary my-2">Home</a> 
+                 <p> <a href="../contact/" class="btn btn-primary my-2" data-i18n="pilote.hero.btn">Ask demo</a> 
+                    <a href="../index.html" class="btn btn-secondary my-2 " data-i18n="nav.home">Home</a> 
                 </p> 
             </div> 
         </div> 
@@ -76,10 +86,10 @@
                         </div>
                         
                         <div class="card-body">
-                            <p class="lead text-body-primary">
+                            <p class="lead text-body-primary" data-i18n="pilote.album.1.title">
                                 Modern & Responsive Home
                             </p>
-                            <p class="card-text">
+                            <p class="card-text" data-i18n="pilote.album.1.desc">
                                 A clean, modern, and fully responsive landing page designed for fast onboarding and immediate clarity, 
                                 on desktop and mobile.
                                 </p>
@@ -88,7 +98,7 @@
 
                                 <div class="btn-group"> 
                                     <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#previewModal"
-                                        data-img="../assets/img/pilote_innov_screen/accueil.png" data-title="Pilote Innovorder v3">
+                                        data-img="../assets/img/pilote_innov_screen/accueil.png" data-title="Pilote Innovorder v3" data-i18n="pilote.album.btn">
                                         View
                                     </button>
                                 </div> 
@@ -105,17 +115,17 @@
                         url('../assets/img/pilote_innov_screen/select_preset.png');">
                         </div>
                         <div class="card-body">
-                            <p class="lead text-body-primary">
+                            <p class="lead text-body-primary" data-i18n="pilote.album.2.title">
                                 Output Preset Selection
                             </p>
-                            <p class="card-text">
+                            <p class="card-text" data-i18n="pilote.album.2.desc">
                                 Predefined output presets allow you to quickly select reporting logic based on business rules, payment modes, and
                                 operational parameters.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#previewModal"
-                                        data-img="../assets/img/pilote_innov_screen/select_preset.png" data-title="Pilote Innovorder v3">
+                                        data-img="../assets/img/pilote_innov_screen/select_preset.png" data-title="Pilote Innovorder v3" data-i18n="pilote.album.btn">
                                         View
                                     </button>
                                 </div>
@@ -131,17 +141,17 @@
                         url('../assets/img/pilote_innov_screen/presets.png');">
                         </div>
                         <div class="card-body">
-                            <p class="lead text-body-primary">
+                            <p class="lead text-body-primary" data-i18n="pilote.album.3.title">
                                 Dictionary-Driven Configuration
                             </p>
-                            <p class="card-text">
+                            <p class="card-text" data-i18n="pilote.album.3.desc">
                                 All report logic is defined through a simple, readable dictionary—making configuration intuitive, fast to adjust, and
                                 fully procedural.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#previewModal"
-                                        data-img="../assets/img/pilote_innov_screen/presets.png" data-title="Pilote Innovorder v3">
+                                        data-img="../assets/img/pilote_innov_screen/presets.png" data-title="Pilote Innovorder v3" data-i18n="pilote.album.btn">
                                         View
                                     </button>
                                 </div>
@@ -168,10 +178,10 @@
                         
                         <div class="card-body">
 
-                            <p class="lead text-body-primary">
+                            <p class="lead text-body-primary" data-i18n="pilote.album.4.title">
                                 Automatic Report Generation
                             </p>
-                            <p class="card-text">
+                            <p class="card-text" data-i18n="pilote.album.4.desc">
                                 Reports are automatically generated based on dictionary parameters, including the number and structure of tables
                                 required for each output.
 
@@ -180,7 +190,7 @@
 
                                 <div class="btn-group"> 
                                     <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#previewModal"
-                                        data-img="../assets/img/pilote_innov_screen/reports.png" data-title="Pilote Innovorder v3">
+                                        data-img="../assets/img/pilote_innov_screen/reports.png" data-title="Pilote Innovorder v3" data-i18n="pilote.album.btn">
                                         View
                                     </button>
                                 </div> 
@@ -197,17 +207,17 @@
                         url('../assets/img/pilote_innov_screen/export.png');">
                         </div>
                         <div class="card-body">
-                            <p class="lead text-body-primary">
-                                Flexible Data Expor
+                            <p class="lead text-body-primary" data-i18n="pilote.album.5.title">
+                                Flexible Data Export
                             </p>
-                            <p class="card-text">
+                            <p class="card-text" data-i18n="pilote.album.5.desc">
                                 Each generated table can be exported individually in CSV or XLSX format, ready for finance, validation, or external
                                 tools.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#previewModal"
-                                        data-img="../assets/img/pilote_innov_screen/export.png" data-title="Pilote Innovorder v3">
+                                        data-img="../assets/img/pilote_innov_screen/export.png" data-title="Pilote Innovorder v3" data-i18n="pilote.album.btn">
                                         View
                                     </button>
                                 </div>
@@ -223,17 +233,17 @@
                         url('../assets/img/pilote_innov_screen/global.png');">
                         </div>
                         <div class="card-body">
-                            <p class="lead text-body-primary">
+                            <p class="lead text-body-primary" data-i18n="pilote.album.6.title">
                                 Global Recap & Control Line
                             </p>
-                            <p class="card-text">
+                            <p class="card-text" data-i18n="pilote.album.6.desc">
                                 A final consolidated recap line is automatically added, providing a quick visual control point to validate totals and
                                 data consistency.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#previewModal"
-                                        data-img="../assets/img/pilote_innov_screen/global.png" data-title="Global report">
+                                        data-img="../assets/img/pilote_innov_screen/global.png" data-title="Global report" data-i18n="pilote.album.btn">
                                         View
                                     </button>
                                 </div>
@@ -275,13 +285,17 @@
 
         <footer class="mt-auto py-4 text-white-50">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="../about" class="nav-link px-2 text-body-secondary">About</a></li>
-                <li class="nav-item"><a href="../contact/" class="nav-link px-2 text-body-secondary">Contact</a></li>
-
+                <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary"
+                        data-i18n="nav.home">Home</a>
+                </li>
+                <li class="nav-item"><a href="/about" class="nav-link px-2 text-body-secondary" data-i18n="nav.about">About</a>
+                </li>
+                <li class="nav-item"><a href="/contact/" class="nav-link px-2 text-body-secondary"
+                        data-i18n="nav.contact">Contact</a></li>
+        
             </ul>
             <p class="text-center text-body-secondary">© 2026 — Hugo's dev sandbox</p>
-
+        
         </footer>
     </div>
 

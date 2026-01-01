@@ -32,15 +32,25 @@
 <body class="d-flex flex-column min-vh-100 text-bg-dark">
     <div class="container-fluid px-4 flex-grow-1 d-flex flex-column">
         <header class="mb-3">
-
             <div class="d-flex align-items-center justify-content-between">
-                <img src="../assets/img/logo_sandbox.png" class=" float-md-start
-                    mb-0 logo">
-                <nav class="nav nav-masthead justify-content-center float-md-end gap-3">
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../index.html">Home</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../about/index.html">About</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../contact/index.html">Contact</a>
+        
+                <!-- Logo -->
+                <img src="../assets/img/logo_sandbox.png" class="logo mb-0" alt="logo">
+        
+                <!-- Language switch (centered) -->
+                <nav class="lang-switch mx-auto">
+                    <a href="#" class="nav-link py-1 px-2 lang-link" data-lang="en">EN</a>
+                    <span class="text-white-50 py-1">/</span>
+                    <a href="#" class="nav-link py-1 px-2 lang-link" data-lang="fr">FR</a>
                 </nav>
+        
+                <!-- Main nav -->
+                <nav class="nav nav-masthead gap-3">
+                    <a class="nav-link fw-bold py-1 px-0 active" data-i18n="nav.home" href="../index.html">Home</a>
+                    <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.about" href="../about/index.html">About</a>
+                    <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.contact" href="../contact/index.html">Contact</a>
+                </nav>
+        
             </div>
         </header>
 
@@ -54,37 +64,37 @@
 
     <div class="card-body text-center">
 
-        <h1 class="card-title-kicker mb-2">CONTACT</h1>
-        <h4 class="fw-semibold mb-3">Let’s build something useful.</h4>
+        <h1 class="card-title-kicker mb-2" data-i18n="contact.contact">CONTACT</h1>
+        <h4 class="fw-semibold mb-3" data-i18n="contact.title">Let’s build something useful.</h4>
 
-        <p class="text-white-50 mb-3">
+        <p class="text-white-50 mb-3" data-i18n="contact.message">
             Feedback, collaboration, or job opportunities — feel free to reach out.
         </p>
 
-        <span class="badge rounded-pill bg-dark-subtle text-white-50 border mb-4">
+        <span class="badge rounded-pill bg-dark-subtle text-white-50 border mb-4" data-i18n="contact.badge">
             Get in touch
         </span>
 
         <!-- Boutons -->
         <div class="d-flex justify-content-center gap-2 flex-wrap mb-4">
-            <a class="btn btn-primary" href="mailto:hpythondev@gmail.com?subject=Hugo's sandbox">
+            <a class="btn btn-primary" href="mailto:hpythondev@gmail.com?subject=Hugo's sandbox" data-i18n="contact.btn.email">
                 <img src="../assets/img/envelope.svg" class="contact-icon me-2" alt="envelope icon">
                 Email me
             </a>
             <a class="btn btn-outline-light"
                 href="https://github.com/hlafaye?tab=overview&from=2025-12-01&to=2025-12-27" target="_blank"
-                rel="noopener">
+                rel="noopener" data-i18n="contact.btn.github">
                 <img src="../assets/img/github.svg" class="contact-icon me-2" alt="github logo">
                 GitHub
             </a>
             <a class="btn btn-outline-light" href="https://www.linkedin.com/in/hugo-lafaye-6429b6159/" target="_blank"
-                rel="noopener">
+                rel="noopener" data-i18n="contact.btn.linkedin">
                 <img src="../assets/img/linkedin.svg" class="contact-icon me-2" alt="linkedin logo">
                 LinkedIn
             </a>
         </div>
 
-        <div class="small text-white-50">
+        <div class="small text-white-50" data-i18n="contact.message.end">
             Prefer a quick message? Email is the fastest.
         </div>
 
@@ -99,13 +109,17 @@
 
         <footer class="mt-auto py-4 text-white-50">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="../about" class="nav-link px-2 text-body-secondary">About</a></li>
-                <li class="nav-item"><a href="../contact/" class="nav-link px-2 text-body-secondary">Contact</a></li>
-
+                <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary"
+                        data-i18n="nav.home">Home</a>
+                </li>
+                <li class="nav-item"><a href="/about" class="nav-link px-2 text-body-secondary" data-i18n="nav.about">About</a>
+                </li>
+                <li class="nav-item"><a href="/contact/" class="nav-link px-2 text-body-secondary"
+                        data-i18n="nav.contact">Contact</a></li>
+        
             </ul>
             <p class="text-center text-body-secondary">© 2026 — Hugo's dev sandbox</p>
-
+        
         </footer>
     </div>
 

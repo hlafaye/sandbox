@@ -29,15 +29,25 @@
 <body class="d-flex flex-column min-vh-100 text-bg-dark">
     <div class="container-fluid px-4 flex-grow-1 d-flex flex-column">
         <header class="mb-3">
-
             <div class="d-flex align-items-center justify-content-between">
-                <img src="../assets/img/logo_sandbox.png" class=" float-md-start
-                    mb-0 logo">
-                <nav class="nav nav-masthead justify-content-center float-md-end gap-3">
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../index.html">Home</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../about/index.html">About</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../contact/index.html">Contact</a>
+        
+                <!-- Logo -->
+                <img src="../assets/img/logo_sandbox.png" class="logo mb-0" alt="logo">
+        
+                <!-- Language switch (centered) -->
+                <nav class="lang-switch mx-auto">
+                    <a href="#" class="nav-link py-1 px-2 lang-link" data-lang="en">EN</a>
+                    <span class="text-white-50 py-1">/</span>
+                    <a href="#" class="nav-link py-1 px-2 lang-link" data-lang="fr">FR</a>
                 </nav>
+        
+                <!-- Main nav -->
+                <nav class="nav nav-masthead gap-3">
+                    <a class="nav-link fw-bold py-1 px-0 active" data-i18n="nav.home" href="../index.html">Home</a>
+                    <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.about" href="../about/index.html">About</a>
+                    <a class="nav-link fw-bold py-1 px-0" data-i18n="nav.contact" href="../contact/index.html">Contact</a>
+                </nav>
+        
             </div>
         </header>
 
@@ -49,8 +59,8 @@
                 <div class="col d-flex align-items-start">
                     <img src="../assets/img/person-fill-gear.svg" class="feature-icon me-3" alt="">
                     <div>
-                        <h3 class="fs-5 text-white mb-1">Operations & Management</h3>
-                        <p class="text-white-50 mb-0">
+                        <h3 class="fs-5 text-white mb-1" data-i18n="about.feature.1.title">Operations & Management</h3>
+                        <p class="text-white-50 mb-0" data-i18n="about.feature.1.desc">
                             Streamline daily operations, clarify processes, and improve execution with measurable routines.</p>
                     </div>
                 </div>
@@ -59,8 +69,8 @@
                 <div class="col d-flex align-items-start">
                     <img src="../assets/img/speedometer2.svg" class="feature-icon me-3" alt="">
                     <div>
-                        <h3 class="fs-5 text-white mb-1">Business Dashboards (KPIs)</h3>
-                        <p class="text-white-50 mb-0">
+                        <h3 class="fs-5 text-white mb-1" data-i18n="about.feature.2.title">Business Dashboards (KPIs)</h3>
+                        <p class="text-white-50 mb-0" data-i18n="about.feature.2.desc">
                             Track sales, costs, margins, and gaps with dashboards designed for fast decisions.</p>
                     </div>
                 </div>
@@ -70,8 +80,8 @@
                 <div class="col d-flex align-items-start">
                     <img src="../assets/img/arrow-repeat.svg" class="feature-icon me-3" alt="">
                     <div>
-                        <h3 class="fs-5 text-white mb-1">Data Cleaning & Automation</h3>
-                        <p class="text-white-50 mb-0">
+                        <h3 class="fs-5 text-white mb-1" data-i18n="about.feature.3.title">Data Cleaning & Automation</h3>
+                        <p class="text-white-50 mb-0" data-i18n="about.feature.3.desc">
                             Automate imports/exports, normalize messy files, and reduce manual work with robust pipelines.</p>
                     </div>
                 </div>
@@ -80,8 +90,8 @@
                 <div class="col d-flex align-items-start">
                     <img src="../assets/img/graph-down.svg" class="feature-icon me-3" alt="">
                     <div>
-                        <h3 class="fs-5 text-white mb-1">Data Analysis & Insights</h3>
-                        <p class="text-white-50 mb-0">
+                        <h3 class="fs-5 text-white mb-1" data-i18n="about.feature.4.title">Data Analysis & Insights</h3>
+                        <p class="text-white-50 mb-0" data-i18n="about.feature.4.desc">
                             Transform raw data into insights: trends, anomalies, performance drivers, and next steps.</p>
                     </div>
                 </div>
@@ -89,8 +99,8 @@
                 <div class="col d-flex align-items-start">
                     <img src="../assets/img/database-fill-gear.svg" class="feature-icon me-3" alt="">
                     <div>
-                        <h3 class="fs-5 text-white mb-1">Relational Databases</h3>
-                        <p class="text-white-50 mb-0">
+                        <h3 class="fs-5 text-white mb-1" data-i18n="about.feature.5.title">Relational Databases</h3>
+                        <p class="text-white-50 mb-0" data-i18n="about.feature.5.desc">
                             SQL schemas, relationships, query optimization, and scalable foundations for your data.</p>
                     </div>
                 </div>
@@ -99,8 +109,8 @@
                 <div class="col d-flex align-items-start">
                     <img src="../assets/img/tools.svg" class="feature-icon me-3" alt="">
                     <div>
-                        <h3 class="fs-5 text-white mb-1">Tooling & Internal Apps</h3>
-                        <p class="text-white-50 mb-0">
+                        <h3 class="fs-5 text-white mb-1" data-i18n="about.feature.6.title">Tooling & Internal Apps</h3>
+                        <p class="text-white-50 mb-0" data-i18n="about.feature.6.desc">
                             Internal tools tailored to your workflow—from quick utilities to full apps that remove friction.</p>
                     </div>
                 </div>
@@ -109,8 +119,8 @@
                 <div class="col d-flex align-items-start">
                     <img src="../assets/img/rocket-takeoff.svg" class="feature-icon me-3" alt="">
                     <div>
-                        <h3 class="fs-5 text-white mb-1">SaaS & MVP Delivery</h3>
-                        <p class="text-white-50 mb-0">
+                        <h3 class="fs-5 text-white mb-1" data-i18n="about.feature.7.title">SaaS & MVP Delivery</h3>
+                        <p class="text-white-50 mb-0" data-i18n="about.feature.7.desc">
                             From idea to working product: rapid MVPs, iterations, and production-ready delivery.
                         </p>
                     </div>
@@ -120,8 +130,8 @@
                 <div class="col d-flex align-items-start">
                     <img src="../assets/img/phone-flip.svg" class="feature-icon me-3" alt="">
                     <div>
-                        <h3 class="fs-5 text-white mb-1">Responsive UI / UX</h3>
-                        <p class="text-white-50 mb-0">
+                        <h3 class="fs-5 text-white mb-1" data-i18n="about.feature.8.title">Responsive UI / UX</h3>
+                        <p class="text-white-50 mb-0" data-i18n="about.feature.8.desc">
                             Mobile-first interfaces with modern UI patterns—fast, accessible, and clean.</p>
                     </div>
                 </div>
@@ -139,23 +149,25 @@
                         <img src="../assets/img/layouts_dash_about.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> 
                     </div> 
                     <div class="col-lg-6"> 
-                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Let’s build tools that actually move your business forward.</h1> 
-                        <p class="lead">Whether you need operational dashboards, internal tools, data pipelines, or a custom web application, I help turn
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" data-i18n="about.card.title">Let’s build tools that actually move your business forward.</h1> 
+                        <p class="lead" data-i18n="about.card.desc">
+                            Whether you need operational dashboards, internal tools, data pipelines, or a custom web application, I help turn
                         complex needs into clear, efficient solutions.
                         
-                        From early exploration to production-ready systems, the goal is simple: better visibility, better decisions, and less friction.</p> 
+                        From early exploration to production-ready systems, the goal is simple: better visibility, better decisions, and less friction.
+                    </p> 
 
                         <div class="d-flex justify-content-center  gap-3 mt-4">
                             <a
                               href="mailto:pythondev@gmail.com?subject=Hugo's sandbox"
-                              class="btn btn-primary btn-lg px-4"
+                              class="btn btn-primary btn-lg px-4" data-i18n="about.card.btn"
                             >
                               Email
                             </a>
                           
                             <a
                               href="../index.html"
-                              class="btn btn-outline-secondary btn-lg px-4"
+                              class="btn btn-outline-secondary btn-lg px-4" data-i18n="nav.home"
                             >
                               Home
                             </a>
@@ -174,11 +186,13 @@
 
         <footer class="mt-auto py-4 text-white-50">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="../about" class="nav-link px-2 text-body-secondary">About</a></li>
-                <li class="nav-item"><a href="../contact/" class="nav-link px-2 text-body-secondary">Contact</a></li>
-
-            </ul>
+                <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary" data-i18n="nav.home">Home</a>
+                </li>
+                <li class="nav-item"><a href="/about" class="nav-link px-2 text-body-secondary" data-i18n="nav.about">About</a></li>
+                <li class="nav-item"><a href="/contact/" class="nav-link px-2 text-body-secondary"
+                        data-i18n="nav.contact">Contact</a></li>
+            
+                </ul>
             <p class="text-center text-body-secondary">© 2026 — Hugo's dev sandbox</p>
 
         </footer>

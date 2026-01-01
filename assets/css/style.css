@@ -454,4 +454,37 @@
       background: rgba(0, 0, 0, 0.15);
   }
 
- 
+  /* Language switch */
+  .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+  }
+
+
+  .lang-switch {
+      transform: translateX(-24px);
+      /* ajuste à l’œil : -16 / -20 / -24 */
+  }
+
+  @media (max-width: 768px) {
+      .lang-switch {
+          transform: none;
+      }
+  }
+
+  .lang-switch .lang-link {
+      opacity: .55;
+      text-decoration: none;
+  }
+
+  .lang-switch .lang-link:hover {
+      opacity: .85;
+  }
+
+  .lang-switch .lang-link.active {
+      opacity: 1 !important;
+      color: #fff !important;
+      font-weight: 700;
+  }

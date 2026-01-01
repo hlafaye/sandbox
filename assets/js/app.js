@@ -1,11 +1,95 @@
 
-const previewModal = document.getElementById('previewModal');
+console.log("app.js loaded");
 
-previewModal.addEventListener('show.bs.modal', event => {
-const button = event.relatedTarget;
-const imgSrc = button.getAttribute('data-img');
-const title = button.getAttribute('data-title');
+function getBasePrefix() {
+    // GitHub Pages repo = /sandbox/..., en local = /
+    return window.location.pathname.startsWith("/sandbox/") ? "/sandbox" : "";
+  }
+  const BASE = getBasePrefix();
+  
 
-document.getElementById('previewImage').src = imgSrc;
-document.getElementById('previewTitle').textContent = title;
-});
+const previewModal = document.getElementById("previewModal");
+if (previewModal) {
+  previewModal.addEventListener("show.bs.modal", (event) => {
+    const button = event.relatedTarget;
+    if (!button) return;
+
+    const imgSrc = button.getAttribute("data-img");
+    const title = button.getAttribute("data-title");
+
+    const imgEl = document.getElementById("previewImage");
+    const titleEl = document.getElementById("previewTitle");
+    if (imgEl) imgEl.src = imgSrc || "";
+    if (titleEl) titleEl.textContent = title || "";
+  });
+}
+
+
+
+async function loadTranslations(lang) {
+    const url = `${BASE}/assets/i18n/${lang}.json`;
+    console.log("Loading i18n:", url);
+  
+    const res = await fetch(url, { cache: "no-store" });
+    console.log("i18n status:", res.status);
+  
+    if (!res.ok) throw new Error(`Cannot load i18n file: ${lang}.json`);
+    return await res.json();
+  }
+  
+  function applyTranslations(dict) {
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      const value = dict[key];
+      if (value === undefined) return; // key manquante => on ignore
+      el.textContent = value;
+    });
+  
+    // bonus: placeholders si tu en as
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-placeholder");
+      const value = dict[key];
+      if (value === undefined) return;
+      el.setAttribute("placeholder", value);
+    });
+  }
+  
+  function setLangUI(lang) {
+    document.querySelectorAll(".lang-link").forEach((a) => {
+      a.classList.toggle("active", a.dataset.lang === lang);
+      a.setAttribute("aria-current", a.dataset.lang === lang ? "true" : "false");
+    });
+  }
+  
+  async function setLanguage(lang) {
+    localStorage.setItem("lang", lang);
+    setLangUI(lang);
+  
+    try {
+      const dict = await loadTranslations(lang);
+      applyTranslations(dict);
+      document.documentElement.lang = lang;
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("lang") || "en";
+    setLanguage(saved);
+  
+    const links = document.querySelectorAll(".lang-link");
+    if (!links.length) {
+      console.warn("No .lang-link found on this page");
+      return;
+    }
+  
+    links.forEach((a) => {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        setLanguage(a.dataset.lang);
+      });
+    });
+  });
+  
+  
