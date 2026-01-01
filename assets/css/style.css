@@ -474,6 +474,20 @@
       }
   }
 
+  @media (max-width: 576px) {
+      .card-project h3 {
+          font-size: 1.35rem;
+      }
+
+      .card-project p {
+          font-size: 0.95rem;
+          line-height: 1.55;
+      }
+
+      .card-project {
+          padding: 1.25rem;
+      }
+  }
   .lang-switch .lang-link {
       opacity: .55;
       text-decoration: none;
