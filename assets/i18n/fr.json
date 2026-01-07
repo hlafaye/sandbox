@@ -15,7 +15,9 @@
     "home.card.color.title": "Color extract",
     "home.card.color.desc": "Extraire une palette de couleurs propre depuis n’importe quelle image en quelques secondes (HEX + nuanciers), optimisée pour le mobile.",
   
-  
+    "home.card.concreate.title":"concreate",
+    "home.card.concreate.desc":"Un projet Flask full-stack démontrant les bonnes pratiques : app factory, gestion d’administration, seeding de base de données et mise en production.",
+
     "about.feature.1.title": "Operations & Management",
     "about.feature.1.desc": "Optimiser les opérations quotidiennes, clarifier les processus et améliorer l’exécution grâce à des routines mesurables.",
   

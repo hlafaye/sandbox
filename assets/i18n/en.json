@@ -10,6 +10,10 @@
     "home.card.pilote.desc":"Import exports, normalize data, and monitor KPIs (sales, food cost, gaps) with a fast pilot dashboard.",
     "home.card.color.title":"Color extract",
     "home.card.color.desc":"Extract a clean color palette from any image in seconds (HEX + swatches), optimized for mobile.",
+    "home.card.concreate.title":"concreate",
+    "home.card.concreate.desc":"A full-stack Flask demo illustrating app factory patterns, admin workflows, database seeding, and production deployment.",
+
+
     "about.feature.1.title":"Operations & Management",
     "about.feature.1.desc":"Streamline daily operations, clarify processes, and improve execution with measurable routines.",
     "about.feature.2.title":"Business Dashboards (KPIs)",
