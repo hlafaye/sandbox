@@ -10,9 +10,11 @@
     "home.card.pilote.desc":"Import exports, normalize data, and monitor KPIs (sales, food cost, gaps) with a fast pilot dashboard.",
     "home.card.color.title":"Color extract",
     "home.card.color.desc":"Extract a clean color palette from any image in seconds (HEX + swatches), optimized for mobile.",
-    "home.card.concreate.title":"concreate",
+    "home.card.concreate.title":"Concreate",
     "home.card.concreate.desc":"A full-stack Flask demo illustrating app factory patterns, admin workflows, database seeding, and production deployment.",
-
+    "home.card.cc_analys.title":"Financial & Attendance Analytics for Contract Catering",
+    "home.card.cc_analys.desc":"A Streamlit-based dashboard delivering financial and attendance insights for contract catering operations, including revenue breakdowns, guest trends, and performance KPIs.",
+    "home.card.cc_analys.infos":"(Simulated data for demo purpose)",
 
     "about.feature.1.title":"Operations & Management",
     "about.feature.1.desc":"Streamline daily operations, clarify processes, and improve execution with measurable routines.",
