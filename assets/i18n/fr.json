@@ -18,7 +18,7 @@
     "home.card.concreate.title":"Concreate",
     "home.card.concreate.desc":"Un projet Flask full-stack démontrant les bonnes pratiques : app factory, gestion d’administration, seeding de base de données et mise en production.",
 
-    "home.card.cc_analys.title":"Aanalyse de performance en restauration collective sous contrat",
+    "home.card.cc_analys.title":"Analyse de performance en restauration collective sous contrat",
     "home.card.cc_analys.desc":"Application d’analyse de données développée en Python et Streamlit, illustrant le nettoyage de données, le calcul de KPI, la visualisation interactive et l’analyse de performance en restauration collective.",
     "home.card.cc_analys.infos":"(Données simulées à des fins de démonstration)",
 
